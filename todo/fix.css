@@ -1,0 +1,57 @@
+/* показать кнопку "Добавить" на мобильных и не давать ей пропадать */
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+  overflow: visible;
+}
+
+.input-group input {
+  flex: 1;
+  min-width: 0;
+}
+
+/* микрофон */
+.mic-btn {
+  position: static !important;
+  flex: 0 0 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+/* кнопка Добавить */
+.add-btn {
+  position: static !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 44px;
+  padding: 0 14px;
+  border: none;
+  border-radius: 12px;
+  background: #317EFB;
+  color: #fff;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.add-btn .emoji {
+  line-height: 1;
+}
+
+/* на узких экранах прячем текст, оставляем только иконку */
+@media (max-width:520px) {
+  .add-btn .btn-text {
+    display: none !important;
+  }
+
+  .add-btn {
+    width: 44px;
+    padding: 0;
+  }
+}
