@@ -169,4 +169,17 @@ footer p {
   h2 {
     font-size: 1.4rem;
   }
+  .btn-primary{
+    display:inline-block;
+    padding:10px 16px;
+    border-radius:12px;
+    background:#317EFB;
+    color:#fff;
+    font-weight:600;
+    text-decoration:none;
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+    transition:transform .08s ease, opacity .2s ease;
+  }
+  .btn-primary:hover{ opacity:.95; }
+  .btn-primary:active{ transform:translateY(1px); }
 }
